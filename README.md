@@ -1,4 +1,4 @@
-Pentru a utiliza aplicatia web accesati serverul web prin: 
+Pentru a utiliza aplicatia web accesati serverul prin: 
 
  https://c250-2a02-2f00-900a-f00-5dd8-5c4c-20d5-4479.ngrok-free.app
 
