@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing:  border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #b2b2ff, #dbe0ec);
+}
+
+
+
+.table_header{
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding:  .8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.table_body{
+    width:95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    overflow: overlay;
+
+    
+}
+
+.table_body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table_body::-webkit-scrollbar-thumb{
+   border-radius: .5rem;
+   background-color: #0004;
+   visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+ table{
+    width:100%;
+ }
+
+main.table{
+    width: 82vw;
+    height: 90vh;
+    background-color: #fff5;
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+.title_row{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(184, 168, 201);
+}
+
+table, th, td{
+    padding: 1rem;
+    align-content: center;    
+    text-align: center; 
+
+}
+
+td[data-status="Scheduled"] {
+    border-radius: 1rem;
+    color: #fff; 
+    background-color: #f9593d; 
+    background-clip: padding-box;
+}
+
+
+td[data-status="On going"] {
+    border-radius: 1rem;
+    color: #000;
+    background-color: #ffd700; 
+    background-clip: padding-box;
+    
+}
+
+
+td[data-status="Complete"] {
+    border-radius: 1rem;
+    color: #fff; 
+    background-color: #6f93ff; 
+    background-clip: padding-box;
+}
+
+
+tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+
+tbody tr:hover{
+    background-color:#fff6 ;
+}
+
+@media (max-width: 600px){
+    td:not(:first-of-type){
+        min-width: 100px;
+    }
+    
+    .button {
+        width: 100%; 
+    }
+}
+
+
+h1{
+    padding-inline: 15px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+   
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 0 16px;
+    border-radius: 4px;
+    color: #fff;
+    background: #8755cd;
+    line-height: 1.15;
+    font-size: 14px;
+    height: 36px;
+    word-spacing: 0px;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 64px;
+    border: none;
+    text-align: center;
+    margin:8px;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover {
+    background-color: #542e5b; 
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    z-index: 99;
+    border-radius: 5px;
+    
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#editForm {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
