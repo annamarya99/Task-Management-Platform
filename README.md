@@ -1,6 +1,6 @@
 Pentru a utiliza aplicatia web accesati serverul prin: 
 
- https://be28-82-78-167-44.ngrok-free.app
+[ https://be28-82-78-167-44.ngrok-free.app](https://499f-82-78-167-153.ngrok-free.app/)
 
 *se va deschide o pagina web -> apasati pe butonul "Visit Site" -> aplicatia Task Management se va deschide
 
